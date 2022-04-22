@@ -7,6 +7,6 @@ use Illuminate\Http\Request;
 class UsuarioController extends Controller
 {
     public function ir_home(){
-        return view("administrador.inicioAdmin");
+        return view("auth.login");
     }
 }
