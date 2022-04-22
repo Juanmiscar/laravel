@@ -14,8 +14,8 @@ class AdministratorFactory extends Factory
     public function definition()
     {
         return [
-            'nombre' => $this->faker->name(),
-            'contrasenya' => $this->faker->password(),
+            'name' => $this->faker->name(),
+            'password' => $this->faker->password(),
         ];
     }
 }

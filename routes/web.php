@@ -24,6 +24,7 @@ Route::get('/inicioAdmin', function(){
 });*/
 
 //Links
+Auth::routes();
 Route::get('/productosAdmin', [AdministradorController::class, 'productosAdmin'])->name('productosAdmin');
 Route::get('/categoriasAdmin', [AdministradorController::class, 'categoriasAdmin'])->name('categoriasAdmin');
 Route::get('/pedidosAdmin', [AdministradorController::class, 'pedidosAdmin'])->name('pedidosAdmin');
@@ -31,4 +32,3 @@ Route::get('/pedidosAdmin', [AdministradorController::class, 'pedidosAdmin'])->n
 //Auth::routes();
 
 
-Auth::routes(['verify' => true]);

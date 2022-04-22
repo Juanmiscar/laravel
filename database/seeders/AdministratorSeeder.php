@@ -17,13 +17,13 @@ class AdministratorSeeder extends Seeder
     public function run()
     {
         Administrator::factory([
-            'nombre' => 'Juanmi',
-            'contrasenya' => Hash::make('juanmi'),
+            'name' => 'Juanmi',
+            'password' => Hash::make('juanmi'),
         ])->create();
 
         Administrator::factory([
-            'nombre' => 'jaume',
-            'contrasenya' => Hash::make('jaume'),
+            'name' => 'jaume',
+            'password' => Hash::make('jaume'),
         ])->create();
 
         Administrator::factory()
